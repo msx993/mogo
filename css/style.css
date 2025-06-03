@@ -1,0 +1,64 @@
+   :root {
+--text-color: #595959; 
+--secondary-text-color: #151515;
+--nav-list-color: #00957A;
+--alert-text-color: #DE2A2A;
+--background-color: #FFFFFF; 
+--accent-color: #00957A;
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Roboto", sans-serif;
+  --third-family: "Kaushan Script", sans-serif;
+}
+.container{
+    width: 1230px;
+    padding: 0 15;
+ margin-right: auto;
+margin-left: auto;
+outline: 1px solid red;
+}
+
+.header_link{
+   font-weight: 400;
+   font-style: 14px;
+    color: var(--nav-list-color)
+}
+
+.benefits_title{
+font-family: var(--third-family);
+text-align: center;
+margin-bottom: 20px;
+}
+
+.benefits_text,.team_title{
+font-family: var(--second-family);
+font-weight: 700;
+text-align: center;
+margin-bottom: 65px;
+}
+
+.benefits_text::after,
+.team_heding::after{
+  display: block;
+content: "";
+width: 60px;
+height: 4px;
+background-color: var(--alert-text-color);
+margin: 0 auto;
+margin-top: 42px;
+}
+
+.benefits_list{
+  display: flex;
+flex-wrap: wrap;
+gap: 100px 70px;
+justify-content: center;
+}
+
+.benefits_item{
+  flex-basis: calc( (100% - 2 * 70px ) / 3);
+}
+
+.benefits{
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
