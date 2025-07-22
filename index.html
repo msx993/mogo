@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
     <style>
         ul {
             list-style-type: none;
@@ -25,12 +27,11 @@
 
 <body>
     <header>
-        <div class="container">
-        <a href="./index.html">MOGO </a>
+        <div class="container header_flex">
+        <a class="title" href="./index.html">MOGO </a>
         <nav>
-            <section class="header_link">
-            <ul>
-                <li><a href="./index.html">ABOUT</a></li>
+             <section class="header_link">
+                 <li><a href="./index.html">ABOUT</a></li>
                 <li><a href="./index.html">SERVICE</a></li>
                 <li><a href="./index.html">WORK</a></li>
                 <li><a href="./blog.html">BLOG</a></li>
@@ -51,25 +52,25 @@
             <ul class="benefits_list">
                 <li class="benefits_item">
                     <h3>photography</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </li>
-                <li class="benefits_item">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              
+                <li class="benefits_item_2">
                     <h3>photography</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </li>
-                <li class="benefits_item">
+                <li class="benefits_item_3">
                     <h3>photography</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </li>
-                <li class="benefits_item">
+                <li class="benefits_item_4">
                     <h3>photography</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </li>
-                <li class="benefits_item">
+                <li class="benefits_item_5">
                     <h3>photography</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </li>
-                <li class="benefits_item">
+                <li class="benefits_item_6">
                     <h3>photography</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </li>
@@ -85,9 +86,9 @@
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
-                <div class="container">
+                <div class="container section_img">
             <ul>
-                <li>
+                <li class="section_item">
                     <img src="./img/first-man.jpg" alt="first-man">
                     <p>Matthew Dix</p>
                     <p>Graphic Design</p>
@@ -108,17 +109,16 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
-        <p>© 2016 MoGo free PSD template by Laaqiq</p>
-        <form>
+    <footer class="footer">
+        <div class="container footer_flex">
+        <p class="footer_text">© 2016 MoGo free PSD template by <span class="footer_accent">Laaqiq</span></p>
+        <form class="footer_form">
             <label>
-                <input type="email" placeholder="Your Email...">
+                <input class="footer_input" type="email" placeholder="Your Email...">
             </label>
-            <button type="submit">Subscribe</button>
+            <button class="footer_button" type="submit">Subscribe</button>
         </form>
       </div>
     </footer>
-</body>
-
+  </body>
 </html>

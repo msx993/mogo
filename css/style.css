@@ -1,64 +1,247 @@
-   :root {
---text-color: #595959; 
---secondary-text-color: #151515;
---nav-list-color: #00957A;
---alert-text-color: #DE2A2A;
---background-color: #FFFFFF; 
---accent-color: #00957A;
+:root {
+  --text-color: #595959;
+  --secondary-text-color: #151515;
+  --nav-list-color: #00957a;
+  --alert-text-color: #de2a2a;
+  --background-color: #ffffff;
+  --accent-color: #00957a;
   --font-family: "Montserrat", sans-serif;
   --second-family: "Roboto", sans-serif;
   --third-family: "Kaushan Script", sans-serif;
 }
-.container{
-    width: 1230px;
-    padding: 0 15;
- margin-right: auto;
-margin-left: auto;
-outline: 1px solid red;
+.container {
+
+  padding: 0 15;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 1px solid red;
+}
+header {
+  padding: 16px;
 }
 
-.header_link{
-   font-weight: 400;
-   font-style: 14px;
-    color: var(--nav-list-color)
-}
-
-.benefits_title{
-font-family: var(--third-family);
-text-align: center;
-margin-bottom: 20px;
-}
-
-.benefits_text,.team_title{
-font-family: var(--second-family);
+.title{
+  font-family: var(--font-family);
 font-weight: 700;
-text-align: center;
-margin-bottom: 65px;
+font-size: 30px;
+color: var(--accent-color);
+margin: 17px 632px 12px 2px;
 }
 
-.benefits_text::after,
-.team_heding::after{
-  display: block;
-content: "";
-width: 60px;
-height: 4px;
-background-color: var(--alert-text-color);
-margin: 0 auto;
-margin-top: 42px;
+.header_flex {
+width: 1200px;
+height: 45px;
 }
-
-.benefits_list{
+.header_list {
   display: flex;
-flex-wrap: wrap;
-gap: 100px 70px;
-justify-content: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 55px;
 }
 
-.benefits_item{
-  flex-basis: calc( (100% - 2 * 70px ) / 3);
+.header_link {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 55px;
+  font-weight: 400;
+  font-style: 14px;
+  color: var(--nav-list-color);
 }
 
-.benefits{
+.benefits_title {
+  font-family: var(--third-family);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.benefits_item::after{
+    content:"";
+background-image: url(../img/alarm.svg);
+background-repeat: no-repeat;
+width: 37px;
+height: 37px;
+}
+
+.benefits_item_2::after{ 
+    content:"";
+  background-image: url(../img/bar-graph.svg);
+background-repeat: no-repeat;
+width: 37px;
+height: 37px;
+}
+
+.benefits_item_3::after{
+    content:"";
+    background-image: url(../img/display.svg);
+background-repeat: no-repeat;
+width: 37px;
+height: 37px;
+}
+
+
+.benefits_item_4::after{
+    content:"";
+    background-image: url(../img/paper.svg);
+background-repeat: no-repeat;
+width: 37px;
+height: 37px;
+}
+
+
+
+.benefits_item_5::after{
+    content:"";
+    background-image: url(../img/home.svg);
+background-repeat: no-repeat;
+width: 37px;
+height: 37px;
+}
+
+.benefits_item_6::after{
+  content:"";
+    background-image: url(../img/digital-marketing.svg);
+    background-repeat: no-repeat;
+    width: 37px;
+height: 37px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section_img {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.section_item{
+
+
+}
+
+.team_title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.team_heding::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: var(--alert-text-color);
+  margin: 0 auto;
+  margin-top: 42px;
+}
+
+.benefits_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px 70px;
+  justify-content: center;
+}
+
+.benefits_text{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 30px;
+font-variant: all-small-caps;
+color: #151515;
+
+}
+
+.benefits_item {
+  flex-basis: calc((100% - 2 * 70px) / 3);
+}
+
+.benefits {
   padding-bottom: 50px;
   padding-top: 50px;
+}
+
+.footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer::before{
+content: "";
+display: block;
+width: 1200px;
+height: 1px;
+background-color: var(--text-color);
+margin: 0 auto;
+margin-bottom: 10px
+;
+
+}
+
+.footer_accent {
+  color: var(--alert-text-color);
+}
+.footer_text {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--secondary-text-color);
+}
+
+.footer_form{
+
+
+
+}
+
+.footer_flex{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/*.footer_flex::before{
+
+}*/
+
+
+.footer_input{
+  padding: 12px 10px;
+  border: 1px solid red;
+  border-right: none;
+}
+
+.footer_input::placeholder{
+font-family: var(--second-family);
+font-style: italic;
+font-weight: 300;
+font-size: 14px;
+color: var(--text-color)
+}
+
+.footer_button{
+padding: 11px 38px;
+background-color:var( --accent-color);
+color: #ffffff;
+text-transform: uppercase;
+font-weight: 600;
+}
+
+
+.footer_button:hover{
+background-color:#0c5c4dfd;
 }
