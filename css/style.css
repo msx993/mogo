@@ -246,9 +246,32 @@ font-weight: 600;
 background-color:#0c5c4dfd;
 }
 
+.social_list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: 12px;
+}
 
+.social_item:hover{
+  color: #00957a;
+  background-color: #ffffff;
+}
 
-.sumble_icon{
+.social_item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+height: 44px;
+  width: 44px;
+  margin-right: 10px;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border-radius: 50%;
+}
+
+.social_icon{
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
