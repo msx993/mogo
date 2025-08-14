@@ -126,7 +126,7 @@ height: 37px;
 }
 
 .section_item{
-
+position: relative;
 
 }
 
@@ -175,6 +175,31 @@ color: #151515;
   padding-bottom: 50px;
   padding-top: 50px;
 }
+
+.enployyes_member{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+gap: 30px;
+}
+
+.enployyes_member>li::before{
+  display: block;
+  position: absolute;
+content: "";
+height: 100%;
+width: 100%;
+background-color: darkorange;
+top: 20px;
+bottom: -20px;
+left: 28px;
+r: -20px;
+}
+.enployyes_member>li:hover ::before{
+  
+}
+
 
 .footer {
   padding-top: 10px;
