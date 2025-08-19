@@ -185,7 +185,7 @@ gap: 30px;
 }
 
 .enployyes_member>li::before{
-  display: block;
+  display: none;
   position: absolute;
 content: "";
 height: 100%;
@@ -197,7 +197,7 @@ left: 28px;
 r: -20px;
 }
 .enployyes_member>li:hover ::before{
-  
+  display: block;
 }
 
 
